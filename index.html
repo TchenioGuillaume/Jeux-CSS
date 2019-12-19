@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validation</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- LIBRARIES -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Jeu des couleurs</h1>
+    </header>
+    <section class="score">
+        <p class="score-infos">record : 0</p>
+    </section>
+    <main class="main">
+        <div class="color-container" id="jsDiv1"></div>
+        <button class="button">OK</button>
+        <div class="color-container" id="jsDiv2"></div>
+    </main>
+    <footer class="footer">
+        <p class="footer-infos">Validation 20/09/2018</p>
+    </footer>
+
+    <!-- MODAL -->
+    <section class="modal" id="jsToHide">
+        <div class="modal-container">
+            <p class="modal-infos">Voici le jeu des couleurs !</p>
+            <p class="modal-infos">Pour jouer, il suffit de cliquer sur le bouton lorsque les couleurs des deux cercles sont identiques.</p>
+            <p class="modal-infos">Bonne chance !</p>
+            <button class="modal-button">Jouer</button>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

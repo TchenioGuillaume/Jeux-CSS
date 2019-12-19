@@ -1,0 +1,183 @@
+/* ----------------- */
+/* --- VARIABLES --- */
+/* ----------------- */
+$font: 'Raleway', sans-serif;
+$darkGray: #3e3e3e;
+$lightGray: #dfdfdf;
+$white: #ffffff;
+$pink: #ff6060;
+$titleSize: 32px;
+$bgImg: url('../img/bokeh-2152298_1920.jpg');
+
+/* ----------------- */
+/* --- VARIABLES --- */
+/* ----------------- */
+@keyframes bgKeyFrame {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 0%}
+    100%{background-position:100% 0%}
+}
+
+/* ----------------- */
+/* ----- INDEX ----- */
+/* ----------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    background-image: $bgImg;
+    animation: bgKeyFrame 30s linear infinite;
+
+    // Header
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $pink;
+        height: 10vh;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                    0 3px 6px rgba(0,0,0,0.23);
+
+        // Title
+        .header-title {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: $white;
+        }
+    }
+
+    // Score section
+    .score {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        text-align: center;
+
+        // Score
+        .score-infos {
+            font-size: 5    0px;
+            font-weight: 700;
+            color: $pink;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.26),
+                         0 1px 4px rgba(0,0,0,0.33);
+        }
+    }
+
+    // Main
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 50vh;
+        margin: 0 10vw;
+
+        // Color-container
+        .color-container {
+            width: 25vh;
+            height: 25vh;
+            background-color: $white;
+            border-radius: 50%;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.16),
+                        0 1px 4px rgba(0,0,0,0.23);
+        }
+
+        // Button
+        .button {
+            width: 10vh;
+            height: 10vh;
+            background-color: $pink;
+            border-radius: 50%;
+            box-shadow: inset 0 3px 6px rgba(255,255,255,0.26),
+                        inset 0 3px 6px rgba(255,255,255,0.33);
+            color: $white;
+            font-size: 26px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            &:hover {
+                box-shadow: inset 0 3px 6px rgba(0,0,0,0.16),
+                            inset 0 3px 6px rgba(0,0,0,0.23);
+            }
+        }
+    }
+
+    // Footer
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        height: 5vh;
+
+        // Infos
+        .footer-infos {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: $darkGray;
+        }
+    }
+
+/* ----------------- */
+/* ----- MODAL ----- */
+/* ----------------- */
+
+    // Modal
+    .modal {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        height: 85vh;
+        width: 100%;
+        background-image: $bgImg;
+        animation: bgKeyFrame 30s linear infinite;
+
+        // Modal container
+        .modal-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            margin: 0 10vw;
+
+            // Infos
+            .modal-infos {
+                font-size: 50px;
+                font-weight: 400;
+                color: $pink;
+            }
+
+            // Button
+            .modal-button {
+                width: 20vw;
+                height: 10vh;
+                background-color: $pink;
+                border-radius: 5px;
+                box-shadow: inset 0 3px 6px rgba(255,255,255,0.26),
+                            inset 0 3px 6px rgba(255,255,255,0.33);
+                color: $white;
+                font-size: 26px;
+                font-weight: 300;
+                letter-spacing: 2px;
+                &:hover {
+                    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16),
+                                inset 0 3px 6px rgba(0,0,0,0.23);
+                }
+            }
+        }
+    }
+}
+
+/* ---------------- */
+/* ------ JS ------ */
+/* ---------------- */
+
+// To hide an element
+.hidden {
+    display: none;
+}
